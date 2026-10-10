@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Birthday 🎂</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BALON -->
+    <div class="balloons">
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+        <span>🎈</span>
+    </div>
+
+
+    <!-- OPENING -->
+    <section class="screen active" id="opening">
+
+        <div class="card">
+
+            <div class="emoji-big">🚨</div>
+
+            <p class="small-text">
+                EMERGENCY NOTICE
+            </p>
+
+            <h1>
+                Ada manusia<br>
+                yang <span>ulang tahun.</span>
+            </h1>
+
+            <p class="description">
+                Dan entah kenapa kamu masih belum
+                kabur dari halaman ini.
+            </p>
+
+            <button onclick="goTo('birthday')" class="main-button">
+                klik kalau berani 👀
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY -->
+    <section class="screen" id="birthday">
+
+        <div class="card">
+
+            <div class="cake">🎂</div>
+
+            <p class="small-text">
+                CONGRATULATIONS!
+            </p>
+
+            <h2>
+                HAPPY<br>
+                <span>BIRTHDAY!</span>
+            </h2>
+
+            <p class="description">
+                Selamat ulang tahun,
+                <strong>patuehh</strong>! 🎉
+            </p>
+
+            <p class="mini-text">
+                Kamu berhasil bertahan hidup selama
+                <strong>365 hari lagi.</strong>
+            </p>
+
+            <button onclick="goTo('age')" class="main-button">
+                lanjut →
+            </button>
+
+        </div>
+
+    </section>
+
+
+<!-- FITUR UMUR BARU -->
+<section class="screen" id="age">
+
+    <div class="card">
+
+        <div class="emoji-big">🎮</div>
+
+        <p class="small-text">
+            NEW LEVEL UNLOCKED
+        </p>
+
+        <h2>
+            Kamu berhasil<br>
+            <span>naik level!</span>
+        </h2>
+
+        <p class="description">
+            Umur baru sudah berhasil dibuka 🎉
+            <br>
+            Sekarang pilih fitur apa yang paling kamu harapkan.
+        </p>
+
+        <div class="choices">
+
+            <button onclick="chooseAge('money')">
+                💰
+                <span>Makin banyak uang</span>
+            </button>
+
+            <button onclick="chooseAge('mature')">
+                🧠
+                <span>Makin dewasa</span>
+            </button>
+
+            <button onclick="chooseAge('sleep')">
+                💤
+                <span>Makin banyak tidur</span>
+            </button>
+
+            <button onclick="chooseAge('food')">
+                🍔
+                <span>Makin banyak makan</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- RESPONSE MONEY -->
+<section class="screen" id="money">
+
+    <div class="card">
+
+        <div class="emoji-big">💰</div>
+
+        <p class="small-text">
+            HASIL PILIHANMU
+        </p>
+
+        <h2>
+            Pilihan yang<br>
+            <span>sangat masuk akal.</span>
+        </h2>
+
+        <p class="description">
+            Sayangnya sistem kami belum bekerja sama
+            dengan Bank Indonesia. 😭
+        </p>
+
+        <p class="mini-text">
+            Tapi semoga beneran terkabul ya. 💸
+        </p>
+
+        <button onclick="goTo('roast')" class="main-button">
+            lanjut →
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- RESPONSE MATURE -->
+<section class="screen" id="mature">
+
+    <div class="card">
+
+        <div class="emoji-big">🧠</div>
+
+        <p class="small-text">
+            HASIL PILIHANMU
+        </p>
+
+        <h2>
+            Wahhh...<br>
+            <span>niat sekali.</span>
+        </h2>
+
+        <p class="description">
+            Semoga bukan cuma umur yang bertambah,
+            tapi juga kesabarannya menghadapi keluarga. 😭
+        </p>
+
+        <button onclick="goTo('roast')" class="main-button">
+            lanjut →
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- RESPONSE SLEEP -->
+<section class="screen" id="sleep">
+
+    <div class="card">
+
+        <div class="emoji-big">💤</div>
+
+        <p class="small-text">
+            HASIL PILIHANMU
+        </p>
+
+        <h2>
+            Akhirnya<br>
+            <span>jujur juga.</span>
+        </h2>
+
+        <p class="description">
+            Semoga tahun ini kamu bisa tidur cukup,
+            bukan tidur sambil menghindari masalah. 😭
+        </p>
+
+        <button onclick="goTo('roast')" class="main-button">
+            lanjut →
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- RESPONSE FOOD -->
+<section class="screen" id="food">
+
+    <div class="card">
+
+        <div class="emoji-big">🍔</div>
+
+        <p class="small-text">
+            HASIL PILIHANMU
+        </p>
+
+        <h2>
+            Prioritas yang<br>
+            <span>benar.</span>
+        </h2>
+
+        <p class="description">
+            Karena hidup memang terlalu singkat
+            untuk menolak makanan gratis. 🤝
+        </p>
+
+        <button onclick="goTo('roast')" class="main-button">
+            lanjut →
+        </button>
+
+    </div>
+
+</section>
+
+
+    <!-- ROAST -->
+    <section class="screen" id="roast">
+
+        <div class="card">
+
+            <div class="emoji-big">📋</div>
+
+            <p class="small-text">
+                HASIL PEMERIKSAAN
+            </p>
+
+            <h2>
+                Selamat! 🎉
+            </h2>
+
+            <div class="roast-box">
+
+                <p>Diagnosis:</p>
+
+                <strong>
+                    TERLALU TUA UNTUK ALASAN
+                    YANG TIDAK JELAS 😭
+                </strong>
+
+            </div>
+
+            <p class="description">
+                Tapi tenang...
+                umur cuma angka.
+            </p>
+
+            <p class="mini-text">
+                Yang penting jangan lupa traktir sepupu.
+            </p>
+
+            <button onclick="goTo('wish')" class="main-button">
+                lanjut →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- WISH -->
+    <section class="screen" id="wish">
+
+        <div class="card">
+
+            <div class="emoji-big">🎁</div>
+
+            <p class="small-text">
+                SERIUS DIKIT
+            </p>
+
+            <h2>
+                Tapi beneran,<br>
+                <span>semoga...</span>
+            </h2>
+
+            <div class="wish-list">
+
+                <p>✨ sehat selalu</p>
+
+                <p>💰 rezekinya makin lancar</p>
+
+                <p>🧠 pikirannya lebih tenang</p>
+
+                <p>❤️ dikelilingi orang baik</p>
+
+                <p>🎯 semua cita-citanya tercapai</p>
+
+            </div>
+
+            <p class="sweet">
+                Dan semoga tahun ini menjadi
+                salah satu tahun terbaikmu. 🤍
+            </p>
+
+            <button onclick="goTo('ending')" class="main-button">
+                ada satu hal lagi...
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENDING -->
+    <section class="screen final" id="ending">
+
+        <div class="card">
+
+            <div class="confetti">🎉</div>
+
+            <h1>
+                HAPPY<br>
+                <span>BIRTHDAY!</span>
+            </h1>
+
+            <div class="final-message">
+
+                <p>
+                    Sekali lagi,
+                    selamat bertambah umur!
+                </p>
+
+                <p>
+                    Semoga panjang umur,
+                    sehat, bahagia,
+                    dan jangan lupa...
+                </p>
+
+                <strong>
+                    TRAKTIRANNYA DITUNGGU. 😭
+                </strong>
+
+            </div>
+
+            <div class="signature">
+
+                <p>
+                    dari sepupu kesayanganmu
+                </p>
+
+                <span>
+                    (yang sebenarnya cuma mau makan)
+                </span>
+
+            </div>
+
+            <button onclick="restart()" class="restart">
+                ulangi dari awal 🔄
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
